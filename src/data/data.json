@@ -1,0 +1,88 @@
+{
+    "Profile": {
+        "catchy_line": "Have a sight on my",
+        "title": "Profile",
+        "img_url": "../../assets/me.png",
+        "name": "Jeffry Patrick",
+        "greetings": "Hi, This is",
+        "role": "Front End Dev",
+        "github": "https://github.com/JeffryPatrick",
+        "linked_in": "https://www.linkedin.com/in/jeffry-patrick-949b1821b"
+    },
+    "about": {
+        "catchy_line": "Get to Know more",
+        "title": "About Me",
+        "education": "Education",
+        "degree": "Bachelor of Computer Application",
+        "abb": "(BCA)",
+        "info": [
+            "Hi, this is Patrick, a code artist with a knack for front-end development and a strong foundation in HTML, CSS, and JS.",
+            "I'm familiar with the basics of React.js (and keen to learn more).",
+            "While exploring front-end technologies, I've started building projects in parallel.",
+            "Through these projects, I've learned how Git works and how to handle API calls.",
+            "I'm passionate about leveraging my skills to create visually appealing and user-friendly interfaces."
+        ]
+    },
+    "skill": {
+        "catchy_line": "Explore my",
+        "title": "Skill Stack",
+        "front_end": {
+            "name": "Front End Dev",
+            "skill_stack": [
+                "HTML5",
+                "CSS",
+                "BootStrap",
+                "JavaScript",
+                "React"
+            ]
+        }
+    },
+    "projects": {
+        "catchy_line": "Browse my recent",
+        "title": "Projects",
+        "proj_list": [
+            {
+                "proj_id": 1,
+                "proj_name": "CRUD Operation",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            },
+            {
+                "proj_id": 2,
+                "proj_name": "Joke Generator",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            },
+            {
+                "proj_id": 3,
+                "proj_name": "ToDo List",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            },
+            {
+                "proj_id": 4,
+                "proj_name": "Weather App",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            },
+            {
+                "proj_id": 5,
+                "proj_name": "Tic-Tac-Toe Game",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            },
+            {
+                "proj_id": 6,
+                "proj_name": "Portfolio",
+                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "github_link": ""
+            }
+        ]
+    },
+    "contact": {
+        "catchy_line": "Get In Touch",
+        "title": "Contact Me",
+        "email": "jeffrypatrick430@gmail.com",
+        "linked_in": "https://www.linkedin.com/in/jeffry-patrick-949b1821b"
+    }
+}
