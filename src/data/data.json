@@ -51,13 +51,13 @@
                 "proj_id": 2,
                 "proj_name": "Joke Generator",
                 "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "github_link": "https://github.com/JeffryPatrick/ReactJokeGenerator"
             },
             {
                 "proj_id": 3,
                 "proj_name": "ToDo List",
                 "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "github_link": "https://github.com/JeffryPatrick/ReactTodoApp"
             },
             {
                 "proj_id": 4,
@@ -75,7 +75,7 @@
                 "proj_id": 6,
                 "proj_name": "Portfolio",
                 "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "github_link": "https://github.com/JeffryPatrick/ReactPortfolio"
             }
         ]
     },
