@@ -44,37 +44,37 @@
             {
                 "proj_id": 1,
                 "proj_name": "CRUD Operation",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "proj_desc": "It is designed based on concept of Music System , it follows CRUD operation, where we can create a new song, play it and update the details of the song. Tech Stacks: HTML, Bootstrap, JS.",
+                "github_link": "https://github.com/JeffryPatrick/MusicSystem"
             },
             {
                 "proj_id": 2,
                 "proj_name": "Joke Generator",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "proj_desc": "In this project, Handling API call is major concern with hooks such as useState() and useEffect() in React.js. From the API we get random jokes. Tech Stacks used: HTML, CSS, JS, React.js.",
                 "github_link": "https://github.com/JeffryPatrick/ReactJokeGenerator"
             },
             {
                 "proj_id": 3,
                 "proj_name": "ToDo List",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "proj_desc": "This project is similar as CRUD operation, but the difference is, it is developed in React Framework and hooks such as useState() used. Tech Stacks used: HTML, CSS, JS, React.js.",
                 "github_link": "https://github.com/JeffryPatrick/ReactTodoApp"
             },
             {
                 "proj_id": 4,
                 "proj_name": "Weather App",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "proj_desc": "This project is similar as Joke Generator, but the difference here is, the value retured from one API call is send to another API call as parameter (i.e. lat and lon is passed).",
+                "github_link": "https://github.com/JeffryPatrick/ReactWeatherApp"
             },
             {
                 "proj_id": 5,
                 "proj_name": "Tic-Tac-Toe Game",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
-                "github_link": ""
+                "proj_desc": "This Project is developed based on React Framework, where props, and hooks like useState() is used. It is Responsive. Tech Stacks used: HTML, CSS, JS, React.js.",
+                "github_link": "https://github.com/JeffryPatrick/ReactTicTacToe"
             },
             {
                 "proj_id": 6,
                 "proj_name": "Portfolio",
-                "proj_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, temporibus, rem error natus atque, vitae cupiditate facere eum ullam assumenda animi at iure delectus repellat est voluptatum consectetur nulla odio.",
+                "proj_desc": "In this Project, I've explained about myself, my skills, and the projects I've done. The information given in the portfolio are driven from json file that I've created.",
                 "github_link": "https://github.com/JeffryPatrick/ReactPortfolio"
             }
         ]
