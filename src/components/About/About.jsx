@@ -1,8 +1,17 @@
 import "./About.css"
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const About = ({ data }) => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <section id="about" className="section">
+        <section data-aos="fade-right" data-aos-duration="1000" id="about" className="section">
             <p className="subheading-2">{data.catchy_line}</p>
             <h1 className="heading">{data.title}</h1>
             <div className="about-content">

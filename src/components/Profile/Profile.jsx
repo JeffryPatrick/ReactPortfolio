@@ -1,12 +1,21 @@
-import "./Profile.css"
+import "./Profile.css";
+
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Profile = ({ data }) => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <section id="profile" className="section">
+        <section data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1000" data-aos-once="false" id="profile" className="section">
             <p className="subheading-2">{data.catchy_line}</p>
             <h1 className="heading">{data.title}</h1>
             <div className="profile-content">
-                <div className="imgSection">
+                <div data-aos="flip-left" data-aos-delay="2250" data-aos-duration="750" className="imgSection">
                     <img src={require("../../assets/me.png")} alt="me" className="img" />
                 </div>
                 <div className="details">

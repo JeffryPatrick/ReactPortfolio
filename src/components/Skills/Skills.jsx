@@ -1,11 +1,20 @@
 import "./Skills.css";
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const Skills = ({ data }) => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <section id="skills" className="section">
+        <section data-aos="fade-right" id="skills" className="section">
             <p className="subheading-2">{data.catchy_line}</p>
             <h1 className="heading">{data.title}</h1>
-            <div className="skill-content">
+            <div className="skill-content" data-aos="flip-down" data-aos-delay="250">
                 <div className="details">
                     <p className="subheading-1">{data.front_end.name}</p>
                     <div className="inner">
