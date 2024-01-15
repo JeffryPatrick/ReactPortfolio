@@ -25,9 +25,9 @@ const Projects = ({ data }) => {
             <div className="project-content">
                 {
                     data.proj_list.map((proj, i) => (
-                        <div className="details">
+                        <div data-aos="flip-right" data-aos-delay="500" className="details">
                             <p className="subheading-1">{proj.proj_name}</p>
-                            <img data-aos="flip-right" src={img_list[i]} alt="" className="proj-img" />
+                            <img src={img_list[i]} alt="" className="proj-img" />
                             <p className="info">{proj.proj_desc}</p>
                             <a href={proj.github_link} target="_blank" className="repo-link"><i className="fa fa-github"></i>&nbsp;Github</a>
                         </div>

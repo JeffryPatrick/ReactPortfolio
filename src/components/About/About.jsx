@@ -11,10 +11,10 @@ const About = ({ data }) => {
     }, [])
 
     return (
-        <section data-aos="fade-right" data-aos-duration="1000" id="about" className="section">
-            <p className="subheading-2">{data.catchy_line}</p>
-            <h1 className="heading">{data.title}</h1>
-            <div className="about-content">
+        <section data-aos-duration="1000" id="about" className="section">
+            <p data-aos="fade-down" className="subheading-2">{data.catchy_line}</p>
+            <h1 data-aos="fade-down" className="heading">{data.title}</h1>
+            <div data-aos="fade-up" data-aos-delay="500" className="about-content">
                 <div className="edu-content">
                     <p className="subheading-1">{data.education}</p>
                     <p className="info">{data.degree} <span className="abbrevation">{data.abb}</span></p>

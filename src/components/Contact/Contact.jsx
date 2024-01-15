@@ -15,11 +15,11 @@ const Contact = ({ data }) => {
             <h1 className="heading">{data.title}</h1>
             <div className="contact-content">
                 <div className="contact-link">
-                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-envelope" id="link-icon"></i>
                     <a className="info" href={"mailto:" + data.email}>{data.email}</a>
                 </div>
                 <div className="contact-link">
-                    <i className="fa fa-linkedin"></i>
+                    <i className="fa fa-linkedin" id="link-icon"></i>
                     <a className="info" href={data.linked_in} target="_blank">Jeffry Patrick</a>
                 </div>
             </div>
