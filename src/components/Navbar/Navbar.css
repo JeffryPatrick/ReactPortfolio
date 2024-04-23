@@ -1,5 +1,5 @@
 .navbar {
-  background: white;
+  background: rgb(0, 0, 0);
   /* border: 1px solid; */
   font-family: Outfit;
   display: flex;
@@ -10,19 +10,19 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  padding: 40px 96px;
+  padding: 32px 96px;
 }
 
 .logo {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .menu-list {
-  background: white;
+  background: black;
   display: flex;
   list-style-type: none;
   column-gap: 48px;
@@ -31,7 +31,7 @@
 .menu-link {
   font-size: 20px;
   letter-spacing: 0.5px;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -39,6 +39,7 @@
   display: none;
   font-size: x-large;
   cursor: pointer;
+  color: white;
 }
 
 .icon {

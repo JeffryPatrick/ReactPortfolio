@@ -5,7 +5,7 @@
         "img_url": "../../assets/me.png",
         "name": "Jeffry Patrick",
         "greetings": "Hi, This is",
-        "role": "Front End Dev",
+        "role": "Full Stack Developer",
         "github": "https://github.com/JeffryPatrick",
         "linked_in": "https://www.linkedin.com/in/jeffry-patrick-949b1821b"
     },
@@ -27,7 +27,7 @@
         "catchy_line": "Explore my",
         "title": "Skill Stack",
         "front_end": {
-            "name": "Front End Dev",
+            "name": "Front-End",
             "skill_stack": [
                 "HTML5",
                 "CSS",
@@ -35,6 +35,17 @@
                 "JavaScript",
                 "React"
             ]
+        },
+        "back_end": {
+            "name": "Back-End",
+            "skill_stack": [
+                "Java",
+                "J2EE"
+            ]
+        },
+        "database": {
+            "name": "Database",
+            "skill_stack": "MySQL"
         }
     },
     "projects": {
@@ -80,6 +91,7 @@
         ]
     },
     "contact": {
+        "name":"Jeffry Patrick",
         "catchy_line": "Get In Touch",
         "title": "Contact Me",
         "email": "jeffrypatrick430@gmail.com",

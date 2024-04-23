@@ -16,6 +16,8 @@ const Projects = ({ data }) => {
         AOS.init();
     }, [])
 
+    let delay = 0
+    
     const img_list = [crud, joke, todo, weather, tictactoe, portfolio]
 
     return (
@@ -25,13 +27,13 @@ const Projects = ({ data }) => {
             <div className="project-content">
                 {
                     data.proj_list.map((proj, i) => (
-                        <div data-aos="flip-right" data-aos-delay="500" className="details">
+                        <div data-aos="fade-up" data-aos-delay={delay += 150} className="details">
                             <p className="subheading-1">{proj.proj_name}</p>
                             <img src={img_list[i]} alt="" className="proj-img" />
                             <p className="info">{proj.proj_desc}</p>
-                            <a href={proj.github_link} target="_blank" className="repo-link"><i className="fa fa-github"></i>&nbsp;Github</a>
+                            <a href={proj.github_link} target="_blank" rel="noreferrer" className="repo-link"><i className="fa fa-github"></i>&nbsp;Github</a>
                         </div>
-                    ))
+                    ))  
                 }
             </div>
         </section>
