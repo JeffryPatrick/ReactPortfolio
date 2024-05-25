@@ -16,7 +16,7 @@ const Profile = ({ data }) => {
             <h1 className="heading">{data.title}</h1>
             <div className="profile-content">
                 <div data-aos="flip-left" data-aos-delay="2250" data-aos-duration="750" className="imgSection">
-                    <img src={require("../../assets/me.png")} alt="me" className="img" />
+                    <img src={require("../../assets/me2.png")} alt="me" className="img" />
                 </div>
                 <div className="details">
                     <p className="subheading-2">{data.greetings}</p>
