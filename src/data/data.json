@@ -16,11 +16,11 @@
         "degree": "Bachelor of Computer Application",
         "abb": "(BCA)",
         "info": [
-            "Hi, this is Patrick, a code artist with a knack for front-end development and a strong foundation in HTML, CSS, and JS.",
-            "I'm familiar with the basics of React.js (and keen to learn more).",
-            "While exploring front-end technologies, I've started building projects in parallel.",
-            "Through these projects, I've learned how Git works and how to handle API calls.",
-            "I'm passionate about leveraging my skills to create visually appealing and user-friendly interfaces."
+            "Hi, this is Patrick, a code artist with a knack for front-end development and a strong foundation in HTML, CSS, JS, and React.",
+            "Also for back-end development proficiency in Java and J2EE including Database such as MySQL",
+            "While exploring these technologies, I've started building projects in parallel.",
+            "By building these projects, I've learned how Git works and how to create and handle (REST) API calls.",
+            "I'm passionate about leveraging my skills to create visually appealing, user-friendly interfaces and building robust, efficient server-side functionalities."
         ]
     },
     "skill": {

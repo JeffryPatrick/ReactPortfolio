@@ -21,5 +21,11 @@
 @media screen and (max-width: 786px) {
   .skill-content {
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .inner {
+    margin-left: 0;
   }
 }
