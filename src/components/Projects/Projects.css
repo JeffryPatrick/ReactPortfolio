@@ -36,7 +36,8 @@
   background: black;
 }
 
-@media screen and (max-width: 786px) {
+/* For mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .project-content {
     display: flex;
     flex-direction: column;
@@ -49,5 +50,29 @@
 
   .repo-link {
     font-size: 20px;
+  }
+}
+
+/* For iPads and tablets */
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .proj-img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  .repo-link {
+    font-size: 20px;
+  }
+
+  .project-content > .details > .info {
+    text-align: justify;
   }
 }

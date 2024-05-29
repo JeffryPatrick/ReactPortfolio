@@ -17,7 +17,7 @@ html {
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
-  padding: 140px 0 100px;
+  padding: 136px 0 100px;
 }
 
 .heading {
@@ -60,9 +60,9 @@ html {
   font-weight: 700;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
   .section {
-    padding: 120px 0 40px;
+    padding: 116px 0 40px;
   }
 
   .heading {

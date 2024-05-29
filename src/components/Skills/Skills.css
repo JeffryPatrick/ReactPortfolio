@@ -18,13 +18,21 @@
   font-size: 32px;
 }
 
-@media screen and (max-width: 786px) {
+/* for mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .skill-content {
     flex-direction: column;
     width: 100%;
     align-items: center;
   }
-  
+
+  .inner {
+    margin-left: 0;
+  }
+}
+
+/* for ipads and tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .inner {
     margin-left: 0;
   }

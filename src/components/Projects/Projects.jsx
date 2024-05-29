@@ -27,7 +27,7 @@ const Projects = ({ data }) => {
             <div className="project-content">
                 {
                     data.proj_list.map((proj, i) => (
-                        <div data-aos="fade-up" data-aos-delay={delay += 150} className="details">
+                        <div data-aos="fade-up" data-aos-delay={delay += 150} className="details" key={i}>
                             <p className="subheading-1">{proj.proj_name}</p>
                             <img src={img_list[i]} alt="" className="proj-img" />
                             <p className="info">{proj.proj_desc}</p>

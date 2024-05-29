@@ -85,7 +85,7 @@
             {
                 "proj_id": 6,
                 "proj_name": "Portfolio",
-                "proj_desc": "In this Project, I've explained about myself, my skills, and the projects I've done. The information given in the portfolio are driven from json file that I've created.",
+                "proj_desc": "In this Project, I've explained about myself, my skills, and the projects I've done. The information given in the portfolio are driven from json file.",
                 "github_link": "https://github.com/JeffryPatrick/ReactPortfolio"
             }
         ]

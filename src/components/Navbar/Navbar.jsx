@@ -23,10 +23,10 @@ const Navbar = () => {
             <a data-aos="zoom-in" data-aos-duration="750" className="logo" href="/">Jeffry Patrick</a>
             <ul className={isNavExpanded ? "menu-list expanded" : "menu-list"}>
                 <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#profile">Profile</a></li>
-                <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#about">About Me</a></li>
+                <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#about">About</a></li>
                 <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="750" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#skills">Skills</a></li>
                 <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#projects">Projects</a></li>
-                <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1250" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#contact">Contact Me</a></li>
+                <li data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1250" onClick={() => setIsNavExpanded(!isNavExpanded)}><a className="menu-link" href="#contact">Contact</a></li>
             </ul>
             <i className={isNavExpanded ? "fa fa-bars menu-icon rotate" : "fa fa-bars menu-icon"} onClick={() => setIsNavExpanded(!isNavExpanded)}></i>
         </nav>
