@@ -1,9 +1,51 @@
-.main-section {
-  padding: 0px 96px;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media screen and (max-width: 786px) {
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: dimgray;
+  border-radius: 8px;
+}
+
+
+.main-section {
+  padding: 0px 96px;
+  /* It can be used while I'm writing my own animation, now we use AOS(Animate On Scroll) library for animation */
+  height: calc(100vh - 115px);
+  margin-top: 115px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* for mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-section {
+    padding: 0 32px;
+    height: calc(100vh - 88px);
+    margin-top: 88px;
+  }
+}
+
+/* for ipads and tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .main-section {
     padding: 0 40px;
+    height: calc(100vh - 94px);
+    margin-top: 94px;
+  }
+}
+
+/* for laptop and small screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-section {
+    padding: 0 64px;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
   }
 }

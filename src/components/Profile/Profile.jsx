@@ -1,27 +1,28 @@
 import "./Profile.css";
 
-import AOS from "aos";
-import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-const Profile = ({ data }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
-
+const Profile = ({ id, icon, data }) => {
     return (
-        <section data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1000" data-aos-once="false" id="profile" className="section">
+        <section id={id} className="section">
             <p className="subheading-2">{data.catchy_line}</p>
-            <h1 className="heading">{data.title}</h1>
+            <h1 className="heading">
+                <FontAwesomeIcon icon={icon} className="heading-icon" />
+                {data.title}
+            </h1>
             <div className="profile-content">
-                <div data-aos="flip-left" data-aos-delay="2250" data-aos-duration="750" className="imgSection">
+                <div className="imgSection">
                     <img src={require("../../assets/me2.png")} alt="me" className="img" />
                 </div>
                 <div className="details">
                     <p className="subheading-2">{data.greetings}</p>
                     <h1 className="heading">{data.name}</h1>
-                    <p className="subheading-1">{data.role}</p>
+                    <p className="subheading-1">
+                        {data.role}&nbsp;<FontAwesomeIcon icon={faCode} className="subheading-1-icon" />
+                    </p>
                     <div className="online-links">
                         <a href={data.github} target="_blank"><i className="fa fa-github"></i></a>
                         <a href={data.linked_in} target="_blank"><i className="fa fa-linkedin"></i></a>

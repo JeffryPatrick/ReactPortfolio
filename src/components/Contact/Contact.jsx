@@ -1,27 +1,29 @@
 import "./Contact.css"
 
-import AOS from "aos";
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-const Contact = ({ data }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-    useEffect(() => {
-        AOS.init({ disable: 'mobile' });
-    }, [])
+const Contact = ({ id, icon, data }) => {
 
     return (
-        <section data-aos="fade-down" data-aos-duration="1000" id="contact" className="section">
+        <section id={id} className="section">
             <p className="subheading-2">{data.catchy_line}</p>
-            <h1 className="heading">{data.title}</h1>
+            <h1 className="heading">
+                <FontAwesomeIcon icon={icon} className="heading-icon" />
+                {data.title}
+            </h1>
             <div className="contact-content">
-                <div className="contact-link">
+                <a className="contact-link info" href={"tel:" + data.phone_no} rel="noreferrer">
+                    <i className="fa fa-phone" id="link-icon"></i>
+                    {data.phone_no}
+                </a>
+                <a className="contact-link info" href={"mailto:" + data.email} rel="noreferrer">
                     <i class="fa fa-envelope" id="link-icon"></i>
-                    <a className="info" href={"mailto:" + data.email}>{data.email}</a>
-                </div>
-                <div className="contact-link">
+                    {data.email}
+                </a>
+                <a className="contact-link info" href={data.linked_in} target="_blank" rel="noreferrer">
                     <i className="fa fa-linkedin" id="link-icon"></i>
-                    <a className="info" href={data.linked_in} target="_blank">Jeffry Patrick</a>
-                </div>
+                    Jeffry Patrick
+                </a>
             </div>
         </section>
 

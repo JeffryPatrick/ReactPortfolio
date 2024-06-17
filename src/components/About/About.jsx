@@ -4,19 +4,27 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-const About = ({ data }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+
+const About = ({ id, icon, data }) => {
 
     useEffect(() => {
         AOS.init();
     }, [])
 
     return (
-        <section data-aos-duration="1000" id="about" className="section">
-            <p data-aos="fade-down" className="subheading-2">{data.catchy_line}</p>
-            <h1 data-aos="fade-down" className="heading">{data.title}</h1>
-            <div data-aos="fade-up" data-aos-delay="500" className="about-content">
+        <section id={id} className="section">
+            <p className="subheading-2">{data.catchy_line}</p>
+            <h1 className="heading">
+                <FontAwesomeIcon icon={icon} className="heading-icon" />
+                {data.title}
+            </h1>
+            <div className="about-content">
                 <div className="edu-content">
-                    <p className="subheading-1">{data.education}</p>
+                    <p className="subheading-1">
+                        <FontAwesomeIcon icon={faGraduationCap} className="subheading-1-icon" />&nbsp;{data.education}
+                    </p>
                     <p className="info">{data.degree} <span className="abbrevation">{data.abb}</span></p>
                 </div>
                 <div className="details">

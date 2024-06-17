@@ -67,7 +67,7 @@
             {
                 "proj_id": 3,
                 "proj_name": "ToDo List",
-                "proj_desc": "This project is similar as CRUD operation, but the difference is, it is developed in React Framework and hooks such as useState() used. Tech Stacks used: HTML, CSS, JS, React.js.",
+                "proj_desc": "This project is similar as CRUD operation, but the difference is, it is developed in React library and hooks such as useState() used. Tech Stacks used: HTML, CSS, JS, React.js.",
                 "github_link": "https://github.com/JeffryPatrick/ReactTodoApp"
             },
             {
@@ -79,7 +79,7 @@
             {
                 "proj_id": 5,
                 "proj_name": "Tic-Tac-Toe Game",
-                "proj_desc": "This Project is developed based on React Framework, where props, and hooks like useState() is used. It is Responsive. Tech Stacks used: HTML, CSS, JS, React.js.",
+                "proj_desc": "This Project is developed based on React library, where props, and hooks like useState() is used. It is Responsive. Tech Stacks used: HTML, CSS, JS, React.js.",
                 "github_link": "https://github.com/JeffryPatrick/ReactTicTacToe"
             },
             {
@@ -91,10 +91,11 @@
         ]
     },
     "contact": {
-        "name":"Jeffry Patrick",
+        "name": "Jeffry Patrick",
         "catchy_line": "Get In Touch",
         "title": "Contact Me",
         "email": "jeffrypatrick430@gmail.com",
-        "linked_in": "https://www.linkedin.com/in/jeffry-patrick-949b1821b"
+        "linked_in": "https://www.linkedin.com/in/jeffry-patrick-949b1821b",
+        "phone_no": "6384925568"
     }
 }

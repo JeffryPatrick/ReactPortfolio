@@ -15,17 +15,21 @@ import { faServer } from "@fortawesome/free-solid-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
-const Skills = ({ data }) => {
+const Skills = ({ id, icon, data }) => {
 
     useEffect(() => {
         AOS.init();
     }, [])
 
     return (
-        <section id="skills" className="section">
-            <p className="subheading-2" data-aos="fade-right" data-aos-delay="250">{data.catchy_line}</p>
-            <h1 className="heading" data-aos="fade-right" data-aos-delay="500">{data.title}</h1>
-            <div className="skill-content" data-aos="fade-right" data-aos-delay="750">
+        <section id={id} className="section">
+            <p className="subheading-2" >{data.catchy_line}</p>
+            <h1 className="heading" >
+                <FontAwesomeIcon icon={icon} className="heading-icon" />
+                {data.title}
+            </h1>
+            <div className="skill-content" >
+                {/* Front-End Skills */}
                 <div className="details">
                     <p className="subheading-1">{data.front_end.name}</p>
                     <div className="inner">
@@ -49,6 +53,7 @@ const Skills = ({ data }) => {
                         <p className="info">{data.front_end.skill_stack[4]}</p>
                     </div>
                 </div>
+                {/* Back-End Skills */}
                 <div className="details">
                     <p className="subheading-1">{data.back_end.name}</p>
                     <div className="inner">
@@ -60,6 +65,7 @@ const Skills = ({ data }) => {
                         <p className="info">{data.back_end.skill_stack[1]}</p>
                     </div>
                 </div>
+                {/* Database Skills */}
                 <div className="details">
                     <p className="subheading-1">{data.database.name}</p>
                     <div className="inner">

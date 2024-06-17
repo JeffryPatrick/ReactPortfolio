@@ -1,14 +1,20 @@
+import { createContext, useContext, useState } from "react";
 import "./App.css";
 import MainSection from "./components/MainSection/MainSection";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  const [activeSection, setActiveSection] = useState();
+
+  if (activeSection === undefined) {
+    setActiveSection("profile");
+  }
 
   return (
-    <div>
-      <Navbar />
-      <MainSection />
-    </div>
+    <>
+      <Navbar activeSection={activeSection} />
+      <MainSection setActiveSection={setActiveSection} />
+    </>
   );
 }
 

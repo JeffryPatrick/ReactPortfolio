@@ -1,3 +1,12 @@
+#about {
+  animation: fade-right forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 450px;
+  animation-timing-function: ease-in-out;
+  -o-animation: none !important;
+}
+
 .about-content {
   display: flex;
   align-items: center;
@@ -14,6 +23,10 @@
 
 /* for mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  #about {
+    animation: none;
+  }
+
   .about-content {
     flex-direction: column;
   }

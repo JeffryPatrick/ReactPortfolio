@@ -1,21 +1,39 @@
-.project-content {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  column-gap: 32px;
-  row-gap: 32px;
-  /* border: 1px solid; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.project-content .details {
-  /* border: 1px solid; */
-  border-radius: 16px;
-  box-shadow: 0px 0px 16px black;
-  align-items: center;
+#projects > .subheading-2,
+#projects > .heading {
+  /* animation */
+  animation: fade-right forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 200px;
+  animation-timing-function: ease-in-out;
+}
+
+.project-content {
+  display: grid;
+  width: 100vw;
+  margin-top: -24px;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 40px;
+  padding: 24px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  /* animation */
+  animation: fade-up forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 450px;
+  animation-timing-function: ease-in-out;
 }
 
 .proj-img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -24,52 +42,128 @@
   font-family: Outfit;
   font-size: 28px;
   text-decoration: none;
-  color: black;
+  color: white;
   text-align: center;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 16px;
   padding: 8px 16px;
 }
 
 .repo-link:hover {
+  color: black;
+  background: white;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 360px;
+  height: 400px;
+  perspective: 1500px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  column-gap: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  box-shadow: 0px 0px 8px black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: black;
   color: white;
-  background: black;
 }
 
 /* For mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  #projects > .subheading-2,
+  #projects > .heading {
+    animation: none;
+  }
+
   .project-content {
+    animation: none;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    row-gap: 24px;
+    padding: 0;
+    margin-top: 0;
   }
 
   .proj-img {
     width: 100%;
-    height: 100%;
+    height: min-content;
   }
 
   .repo-link {
     font-size: 20px;
+  }
+
+  .flip-card {
+    width: 100%;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    border: 2px solid;
+    box-shadow: none;
+    padding: 0 16px;
+    top: 0;
+    left: 0;
   }
 }
 
 /* For iPads and tablets */
 @media screen and (min-width: 481px) and (max-width: 786px) {
   .project-content {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 24px;
-    row-gap: 24px;
+    column-gap: 40px;
   }
 
   .proj-img {
-    width: 200px;
-    height: 200px;
-    object-fit: fill;
+    width: 100%;
+    height: min-content;
   }
 
   .repo-link {
     font-size: 20px;
+  }
+
+  .flip-card {
+    width: 300px;
+    height: 360px;
   }
 
   .project-content > .details > .info {
