@@ -1,18 +1,9 @@
 import "./About.css"
 
-import AOS from "aos";
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const About = ({ id, icon, data }) => {
-
-    useEffect(() => {
-        AOS.init();
-    }, [])
-
     return (
         <section id={id} className="section">
             <p className="subheading-2">{data.catchy_line}</p>

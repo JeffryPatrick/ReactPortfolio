@@ -12,13 +12,11 @@
   border-radius: 8px;
 }
 
-
 .main-section {
   padding: 0px 96px;
-  /* It can be used while I'm writing my own animation, now we use AOS(Animate On Scroll) library for animation */
   height: calc(100vh - 115px);
   margin-top: 115px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

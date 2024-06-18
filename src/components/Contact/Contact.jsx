@@ -26,7 +26,6 @@ const Contact = ({ id, icon, data }) => {
                 </a>
             </div>
         </section>
-
     );
 }
 

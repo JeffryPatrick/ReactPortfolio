@@ -4,7 +4,6 @@
   animation-range-start: cover;
   animation-range-end: 450px;
   animation-timing-function: ease-in-out;
-  -o-animation: none !important;
 }
 
 .about-content {

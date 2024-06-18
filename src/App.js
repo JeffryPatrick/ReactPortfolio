@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import MainSection from "./components/MainSection/MainSection";
 import Navbar from "./components/Navbar/Navbar";

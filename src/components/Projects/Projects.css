@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #projects > .subheading-2,
 #projects > .heading {
   /* animation */
@@ -105,11 +99,11 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #projects > .subheading-2,
   #projects > .heading {
-    animation: none;
+    /* animation: none; */
   }
 
   .project-content {
-    animation: none;
+    /* animation: none; */
     width: 100%;
     display: flex;
     flex-direction: column;

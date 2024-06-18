@@ -37,9 +37,9 @@
 
 /* For Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #contact {
+  /* #contact {
     animation: none;
-  }
+  } */
 
   .contact-content {
     flex-direction: column;
