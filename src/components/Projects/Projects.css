@@ -40,12 +40,13 @@
   text-align: center;
   border: 2px solid;
   border-radius: 16px;
-  padding: 8px 16px;
+  padding: 4px 16px;
 }
 
 .repo-link:hover {
   color: black;
   background: white;
+  border: 2px solid white;
 }
 
 .flip-card {
@@ -86,7 +87,9 @@
 }
 
 .flip-card-front {
-  box-shadow: 0px 0px 8px black;
+  /* box-shadow: 0px 0px 8px black; */
+  background-color: white;
+  border: 3px solid black;
 }
 
 .flip-card-back {
@@ -97,11 +100,6 @@
 
 /* For mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #projects > .subheading-2,
-  #projects > .heading {
-    /* animation: none; */
-  }
-
   .project-content {
     /* animation: none; */
     width: 100%;

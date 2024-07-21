@@ -2,6 +2,7 @@ import "./Profile.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Profile = ({ id, icon, data }) => {
     return (
@@ -24,6 +25,9 @@ const Profile = ({ id, icon, data }) => {
                     <div className="online-links">
                         <a href={data.github} target="_blank"><i className="fa fa-github"></i></a>
                         <a href={data.linked_in} target="_blank"><i className="fa fa-linkedin"></i></a>
+                    </div>
+                    <div className="resume">
+                        <a href="https://drive.google.com/file/d/1iIk-fRu56Y-Z_D2p7RQAJmOUwJd-1hlJ/view" target="_blank" className="resume-link">Check Resume</a>
                     </div>
                 </div>
             </div>

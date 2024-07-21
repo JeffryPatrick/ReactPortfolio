@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: system-ui; */
 }
 
 .section {
@@ -171,23 +172,27 @@
   .heading-icon {
     font-size: 26px;
   }
+
+  .heading {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .heading {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .subheading-1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .subheading-2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .info {
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
   }
 

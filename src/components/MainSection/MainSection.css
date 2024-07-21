@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -13,6 +13,7 @@
 }
 
 .main-section {
+  background-color: white;
   padding: 0px 96px;
   height: calc(100vh - 115px);
   margin-top: 115px;

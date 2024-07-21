@@ -1,4 +1,5 @@
 #about {
+  border-radius: 25px;
   animation: fade-right forwards;
   animation-timeline: view();
   animation-range-start: cover;
@@ -9,7 +10,7 @@
 .about-content {
   display: flex;
   align-items: center;
-  column-gap: 120px;
+  column-gap: 48px;
 }
 
 .edu-content {
@@ -18,6 +19,7 @@
   flex-direction: column;
   row-gap: 8px;
   text-align: center;
+  margin-left: px;
 }
 
 /* for mobile devices */

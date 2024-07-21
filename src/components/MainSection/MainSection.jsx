@@ -18,7 +18,7 @@ const MainSection = ({ setActiveSection }) => {
         const handleScroll = () => {
             const sections = document.querySelectorAll("main section");
 
-            const navHeight = window.innerHeight / 1.2;
+            const navHeight = window.outerHeight / 1.3;
 
             sections.forEach((section) => {
                 const sectionRect = section.getBoundingClientRect();
